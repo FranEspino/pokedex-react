@@ -1,0 +1,130 @@
+.container{
+    background-color: red;
+    height: 600px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.led{
+    background-color: rgb(0, 0, 0);
+    height: 250px;
+    width: 400px;
+    border: 8px solid #DFDFDF;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+}
+
+.roundBlue{
+    width: 80px;
+    height: 80px;
+    background-color: #00699D;
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 3px 15px 1px #00699D; 
+    box-shadow: 5px 3px 15px 1px #00699D;
+}
+
+.roundItem1{
+    width: 20px;
+    height: 20px;
+    background-color: #570000;
+    border-radius: 50%;
+}
+
+.roundItem2{
+    width: 20px;
+    height: 20px;
+    background-color: #d4ad00;
+    border-radius: 50%;
+}
+
+.roundItem3{
+    width: 20px;
+    height: 20px;
+    background-color: #006c05;
+    border-radius: 50%;
+}
+.containerHeader{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+.containerRoundItem{
+    display: flex;
+}
+
+.textItemInfo{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.textItemInfo2{
+    color: aliceblue;
+    margin-left: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.itemInfo{
+    display: flex;
+}
+
+.controlsContainer{
+    display: flex;
+  
+}
+.control1{
+    width: 90px;
+    height: 90px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: 3em;
+    cursor: pointer;
+    border: 2px solid #fff
+}
+
+.control1:hover{
+    background-color: #323232;
+}
+
+.control2{
+    width: 200px;
+    height: 80px;
+    margin-left: 2em;
+    background-color: #01AF58;
+}
+
+.control3{
+    width: 100px;
+    height: 80px;
+    background-color: transparent;
+    position: relative;
+    margin-left: 3em;
+}
+
+.control3::before, .control3::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background-color: #000;
+    top:0;
+    left: 0;
+}
+
+.control3::before{
+    transform: rotate(90deg);
+}
+
+.control3::after{
+    transform: rotate(0deg);
+}
